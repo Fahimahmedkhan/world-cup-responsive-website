@@ -1,5 +1,6 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* Common Styles */
 body{
@@ -8,17 +9,72 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 .main-body{
-    margin: 50px 140px 0 140px;
+    margin: 50px 140px 0;
     border: 5px solid blue;
     padding: 0;
 }
+/* Header Section Styles Starts */
 header{
     width: 100%;
     height: 500px;
     border-radius: 30px;
     background-color: #161616;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
 }
-/* Footer Styels */
+.left-header{
+    color: white;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+}
+.left-header h1{
+    display: inline;
+    font-size: 40px;
+    font-weight: 700;
+}
+.left-header p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+}
+.left-header-button{
+    background-color: #DD0000;
+    width: 225px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-header-button a {
+    text-decoration: none;
+}
+.left-header-button:hover {
+    background-color: orange;
+}
+.left-header-button samp{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    padding-right: 20px;
+}
+.left-header-button:active {
+    background-color: orangered;
+    box-shadow: 0 5px #4c2010;
+    transform: translateY(4px);
+}
+.fa-angle-right{
+    width: 10px;
+}
+.right-header img{
+    height: 100%;
+    width: 80%;
+}
+/* Header Section Styles Ends */
+/* Footer Styels Starts */
 footer{
     color: #FFFFFF;
     background-color: #161616;
@@ -42,7 +98,6 @@ hr{
     margin: 50px 140px;
 }
 /* Footer Bottom Section (Navigation Bar) */
-
 .footer-navbar ul{
     display: inline;
     padding: 0;
@@ -63,3 +118,4 @@ hr{
 .social-links{
     margin: 25px 0;
 }
+/* Footer Styels Ends */
