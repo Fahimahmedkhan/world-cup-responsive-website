@@ -10,7 +10,6 @@ body{
 }
 .main-body{
     margin: 50px 140px 0;
-    border: 5px solid blue;
     padding: 0;
 }
 /* Header Section Styles Starts */
@@ -85,12 +84,11 @@ aside{
     height: 290px;
     float: left;
     background-color: #161616;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 .right-section{
     width: 70%;
     float: right;
-    border: 3px solid orangered;
 }
 /* Side Navigation Styles Starts */
 .side-navbar ul{
@@ -120,7 +118,60 @@ aside{
     color: white;
 }
 /* Side Navigation Styles Ends */
+/* Right Section Starts */
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+.game {
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.game .game-banner img {
+    width: 100%;
+    height: 150px;
+}
+.game-detail {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.right-section-button{
+    height: 30px;
+    width: 110px;
+    border-radius: 10px;
+}
+.game-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.game-duration-comments {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    width: 100px;
+    height: 25px;
+    color: #161616;
+    opacity: 70%;
+}
+.fa-clock {
+    font-size: 25px;
+    color: #161616;
+}
+.fa-comment-dots {
+    font-size: 25px;
+    color: #161616;
+}
+/* Right Section Ends */
 /* Main Body Section Styles Ends */
+
+
 /* Footer Styels Starts */
 footer{
     color: #FFFFFF;
