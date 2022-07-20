@@ -6,11 +6,10 @@
 body {
     margin: 0;
     padding: 0;
-    max-width: 1366px;
     font-family: 'Poppins', sans-serif;
 }
 
-.main-body {
+.main-container {
     max-width: 1200px;
     margin: 50px 140px 0;
     padding: 0;
@@ -92,19 +91,22 @@ header {
 main {
     max-width: 1200px;
     margin: 130px 0;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 30px;
 }
 
 aside {
-    width: 22%;
+    /* width: 22%; */
     height: 290px;
-    float: left;
+    /* float: left; */
     background-color: #161616;
     border-radius: 10px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
 }
 
-.right-section {
+.right-contain {
     width: 70%;
     float: right;
 }
@@ -211,7 +213,6 @@ aside {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-
 }
 
 .match-banner img {
@@ -299,10 +300,9 @@ hr {
 /* Footer Styels Ends */
 
 /* Media Queries */
-
 /* Mobile Devices */
 @media only screen and (max-width:688px) {
-    .main-body {
+    .main-container {
         margin: 50px 30px 0;
         padding: 0;
     }
@@ -330,17 +330,17 @@ hr {
         text-overflow: ellipsis;
     }
 
-    main {
-        margin-top: 50px;
-        display: grid;
-        grid-template-rows: repeat(1, 1fr);
-        justify-items: center;
-        align-items: center;
-    }
-
     .text-ellipsis:active {
         overflow: visible;
         white-space: normal;
+    }
+
+    main {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
     }
 
     aside {
@@ -395,7 +395,17 @@ hr {
     header {
         height: 600px;
     }
-
+    .text-ellipsis {
+        white-space: nowrap;
+        width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .text-ellipsis:active {
+        overflow: visible;
+        white-space: normal;
+    }
     main {
         display: inline;
     }
@@ -407,7 +417,7 @@ hr {
         background-color: white;
     }
 
-    .right-section {
+    .right-contain {
         width: 100%;
     }
 
