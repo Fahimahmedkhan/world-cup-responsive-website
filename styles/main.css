@@ -3,19 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 /* Common Styles */
-body{
+body {
     margin: 0;
     padding: 0;
     max-width: 1366px;
     font-family: 'Poppins', sans-serif;
 }
-.main-body{
+
+.main-body {
     max-width: 1200px;
     margin: 50px 140px 0;
     padding: 0;
 }
+
 /* Header Section Styles Starts */
-header{
+header {
     width: 100%;
     background-color: #161616;
     height: 500px;
@@ -24,23 +26,27 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
 }
-.left-header{
+
+.left-header {
     color: white;
     width: 80%;
     height: 300px;
     margin: auto;
 }
-.left-header h1{
+
+.left-header h1 {
     display: inline;
     font-size: 40px;
     font-weight: 700;
 }
-.left-header p{
+
+.left-header p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 100;
 }
-.left-header-button{
+
+.left-header-button {
     background-color: #DD0000;
     width: 225px;
     height: 50px;
@@ -49,39 +55,47 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .left-header-button a {
     text-decoration: none;
 }
+
 .left-header-button:hover {
     background-color: orange;
 }
-.left-header-button samp{
+
+.left-header-button samp {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     color: white;
     padding-right: 20px;
 }
+
 .left-header-button:active {
     background-color: orangered;
     box-shadow: 0 5px #4c2010;
     transform: translateY(4px);
 }
-.fa-angle-right{
+
+.fa-angle-right {
     width: 10px;
 }
-.right-header img{
+
+.right-header img {
     height: 100%;
     width: 80%;
 }
+
 /* Header Section Styles Ends */
 /* Main Body Sections Styles Starts */
-main{
+main {
     max-width: 1200px;
     margin: 130px 0;
     display: flex;
 }
-aside{
+
+aside {
     width: 22%;
     height: 290px;
     float: left;
@@ -89,13 +103,14 @@ aside{
     border-radius: 10px;
     margin-right: 10px;
 }
-.right-section{
+
+.right-section {
     width: 70%;
     float: right;
 }
 
 /* Side Navigation Styles Starts */
-.side-navbar ul{
+.side-navbar ul {
     padding: 0;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -103,10 +118,12 @@ aside{
     justify-content: center;
     justify-items: center;
 }
-.side-navbar ul li{
+
+.side-navbar ul li {
     list-style-type: none;
 }
-.side-navbar ul li a{
+
+.side-navbar ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,10 +134,12 @@ aside{
     background-color: white;
     border-radius: 10px;
 }
-#visited{
+
+#visited {
     background-color: red;
     color: white;
 }
+
 /* Side Navigation Styles Ends */
 /* Right Section Starts */
 .games {
@@ -128,11 +147,14 @@ aside{
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
 }
-.game,.match {
+
+.game,
+.match {
     border: 1px solid gray;
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
 .game .game-banner img {
     width: 100%;
     height: 150px;
@@ -142,17 +164,20 @@ aside{
     margin-top: 15px;
     margin-left: 15px;
 }
-.right-section-button{
+
+.right-section-button {
     height: 30px;
     width: 110px;
     border-radius: 10px;
 }
+
 .game-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 14px;
 }
+
 .game-duration-comments {
     display: flex;
     justify-content: space-evenly;
@@ -165,17 +190,21 @@ aside{
     color: #161616;
     opacity: 70%;
 }
+
 .fa-clock {
     font-size: 25px;
     color: #161616;
 }
+
 .fa-comment-dots {
     font-size: 25px;
     color: #161616;
 }
-.match{
+
+.match {
     text-align: center;
 }
+
 .match-banner {
     padding: 20px;
     display: grid;
@@ -184,33 +213,39 @@ aside{
     align-items: center;
 
 }
+
 .match-banner img {
     width: 100px;
     height: 80px;
 }
-.match-date{
+
+.match-date {
     font-size: 14px;
     opacity: 40%;
 }
-.tab-footer{
+
+.tab-footer {
     display: none;
 }
-.tab-button{
+
+.tab-button {
     margin: 100pxx;
 }
-.tab-button a{
+
+.tab-button a {
     padding: 15px;
     background-color: red;
     text-decoration: none;
     border-radius: 5px;
     color: white;
 }
+
 /* Right Section Ends */
 /* Main Body Section Styles Ends */
 
 
 /* Footer Styels Starts */
-.main-footer{
+.main-footer {
     color: #FFFFFF;
     background-color: #161616;
     width: 100%;
@@ -218,41 +253,49 @@ aside{
     overflow: hidden;
     text-align: center;
 }
+
 /* Footer Top Section Styles Starts */
-.top-footer{
+.top-footer {
     color: #FFFFFF;
     font-size: 40px;
     font-weight: 700;
     padding-top: 30px;
 }
+
 /* Footer Top Section Styles Ends */
-hr{
+hr {
     color: #FFFFFF;
     opacity: 10%;
     width: 1086px;
     margin: 50px 140px;
 }
+
 /* Footer Bottom Section (Navigation Bar) */
-.footer-navbar ul{
+.footer-navbar ul {
     display: inline;
     padding: 0;
     margin: 0;
 }
-.footer-navbar ul li{
+
+.footer-navbar ul li {
     display: inline;
     font-size: 18px;
     margin: 30px;
 }
-.footer-navbar ul li a{
+
+.footer-navbar ul li a {
     text-decoration: none;
     color: #B9B9B9;
 }
-.footer-navbar ul li a:hover{
+
+.footer-navbar ul li a:hover {
     color: orange;
 }
-#social-links{
+
+#social-links {
     margin: 25px 0;
 }
+
 /* Footer Styels Ends */
 
 /* Media Queries */
@@ -263,6 +306,7 @@ hr{
         margin: 50px 30px 0;
         padding: 0;
     }
+
     header {
         height: 680px;
         display: grid;
@@ -270,30 +314,35 @@ hr{
         justify-items: center;
         align-items: center;
     }
-    .left-header{
+
+    .left-header {
         margin-top: 70px;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    .text-ellipsis{
+
+    .text-ellipsis {
         white-space: nowrap;
         width: 500px;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    main{
+
+    main {
         margin-top: 50px;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         justify-items: center;
         align-items: center;
     }
-    .text-ellipsis:active{
+
+    .text-ellipsis:active {
         overflow: visible;
         white-space: normal;
     }
+
     aside {
         /* margin-top: 50px; */
         margin-bottom: 50px;
@@ -301,32 +350,40 @@ hr{
         height: 290px;
         background-color: white;
     }
+
     .side-navbar ul {
         margin-top: 30px;
         grid-template-rows: repeat(3, 1fr);
     }
+
     .side-navbar ul li a {
         border: 1px solid #E8E8E8;
     }
+
     .games {
         grid-template-columns: repeat(1, 1fr);
     }
-    .game .game-banner img{
+
+    .game .game-banner img {
         height: 300px;
     }
+
     hr {
         width: 536px;
         margin: 0 76px;
     }
-    .main-footer{
+
+    .main-footer {
         height: auto;
     }
-    #social-links ul{
+
+    #social-links ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
+
     .footer-navbar ul {
         display: flex;
         flex-direction: column;
@@ -335,28 +392,34 @@ hr{
 
 /* Tablet Devices */
 @media only screen and (min-width:689px) and (max-width:992px) {
-    header{
+    header {
         height: 600px;
     }
-    main{
+
+    main {
         display: inline;
     }
+
     aside {
         margin-top: 50px;
         width: 100%;
         height: 290px;
         background-color: white;
     }
+
     .right-section {
         width: 100%;
     }
-    .side-navbar ul{
+
+    .side-navbar ul {
         margin-top: 30px;
         grid-template-columns: repeat(3, 1fr);
     }
-    .side-navbar ul li a{
+
+    .side-navbar ul li a {
         border: 1px solid #E8E8E8;
     }
+
     .double-view {
         display: grid;
         grid-template-rows: repeat(1, 1fr);
@@ -364,17 +427,21 @@ hr{
         justify-content: center;
         justify-items: center;
     }
-    .tab-footer{
+
+    .tab-footer {
         display: block;
         margin-bottom: 50px;
     }
+
     .games {
         grid-template-columns: repeat(2, 1fr);
     }
-    .main-footer{
+
+    .main-footer {
         height: auto;
     }
-    .footer-navbar ul{
+
+    .footer-navbar ul {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
